@@ -7,9 +7,12 @@ using namespace std;
 
 class MyString {
 private:
+	char* _str;
+	int _strLength;
 
 public:
 	MyString();
+	MyString(char* str, int strLength);
 	MyString(char* source);
 
 	friend ostream& operator<<(ostream& in, MyString& val);
@@ -17,6 +20,7 @@ public:
 	friend int operator!=(MyString a, MyString b);
 	friend int operator==(MyString a, MyString b);
 	friend MyString operator+(MyString a, MyString b);
+	int Length(MyString str);
 };
 
 

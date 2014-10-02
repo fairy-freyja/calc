@@ -10,6 +10,7 @@ void process(MyString userInput) {
 int main() {
 	MyString userInput;
 
+	cin.getline()
 	cin >> userInput;
 	while (userInput != "exit"){
 		process(userInput);
